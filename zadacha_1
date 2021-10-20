@@ -1,0 +1,13 @@
+def zadacha_1(chislo):
+    our_chislo=chislo
+    rezultat=0
+    while (chislo>0):
+      znachenie=chislo%10
+      rezultat=rezultat*10+znachenie
+      chislo=chislo//10
+    if(our_chislo==rezultat):
+        print("True")
+    else:
+        print("False")
+
+zadacha_1(int (input("Введите число:")))
