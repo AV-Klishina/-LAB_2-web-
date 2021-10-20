@@ -1,0 +1,27 @@
+uslovie=[]
+del_na_2=[]
+del_na_3=[]
+del_na_5=[]
+def zadacha_2():
+    colvo=int (input("Введите число элементов:"))
+    print("Введите элементы:")
+    for i in range(colvo):
+        znachenie=int(input())
+        uslovie.append(znachenie)
+    print("Начальный список")
+    print(uslovie)
+    for i in range(colvo):
+        if(uslovie[i]%2==0):
+            del_na_2.append(uslovie[i])
+        if(uslovie[i]%3==0):
+            del_na_3.append(uslovie[i])
+        if(uslovie[i]%5==0):
+            del_na_5.append(uslovie[i])
+    print("Числа, которые делятся на 2")
+    print(del_na_2)
+    print("Числа, которые делятся на 3")
+    print(del_na_3)
+    print("Числа, которые делятся на 5")
+    print(del_na_5)
+
+zadacha_2()
