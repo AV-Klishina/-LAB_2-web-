@@ -1,0 +1,42 @@
+def zadacha_3(chislo):
+    our_chislo=chislo
+    rezultat=0
+    new_chislo=0
+    if((our_chislo<0) and (our_chislo%10==0) and (our_chislo!=0)):
+        chislo=abs(chislo)
+        chislo=chislo//10
+        while (chislo>0):
+            znachenie=chislo%10
+            rezultat=rezultat*10+znachenie
+            chislo=chislo//10
+        new_chislo=(-1)*rezultat
+        print(new_chislo)
+
+    else:
+        if(our_chislo<0):
+            chislo=abs(chislo)
+            while (chislo>0):
+                znachenie=chislo%10
+                rezultat=rezultat*10+znachenie
+                chislo=chislo//10
+            new_chislo=(-1)*rezultat
+
+        if(our_chislo==0):
+            print(chislo)
+        if((our_chislo%10==0) and (our_chislo!=0)):
+            chislo=chislo//10
+            while (chislo>0):
+                znachenie=chislo%10
+                rezultat=rezultat*10+znachenie
+                chislo=chislo//10
+            new_chislo=rezultat
+
+        if(our_chislo>0):
+            while (chislo>0):
+                znachenie=chislo%10
+                rezultat=rezultat*10+znachenie
+                chislo=chislo//10
+            new_chislo=rezultat
+        print(new_chislo)
+
+zadacha_3(int (input("Введите число:")))
